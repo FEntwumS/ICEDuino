@@ -24,18 +24,3 @@ Now select libusb-win32 (anyversion) from the driver list and replace the driver
 ![Win Zadig](docs/Zadig.jpg)
 
 [Source from CologneChip AG (Chapter 5.3)](https://www.colognechip.com/docs/ug1002-toolchain-install-latest.pdf)
-
-### Change OpenFPGALoader (Only Windows)
-
-As long as this issue remains unresolved, the following steps must be taken to achieve a functional setup with the OSS-CAD suite:
-
-https://github.com/YosysHQ/oss-cad-suite-build/issues/179 
-
-1. Also install the Cologne Chip Toolchain plugin in OneWare Studio. 
-2. Under the ‘binaries’ tab in the extension window, it should be possible to download the current toolchain from Cologne Chip.
-3. Download the toolchain
-
-The OneWare Studio workspace is located under the user directory. For example, C:/Users/Peter/OneWareStudio
-
-4. Copy this file `OneWareStudio\Packages\NativeTools\colognechip\cc-toolchain-win\bin\openFPGALoader\openFPGALoader.exe` in this folder `OneWareStudio\Packages\NativeTools\osscadsuite\oss-cad-suite\bin`.
-5. Confirm in Explorer that you want to replace the existing file with the new one.
